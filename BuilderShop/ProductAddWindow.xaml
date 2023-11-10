@@ -1,0 +1,29 @@
+﻿<Window x:Class="BuilderShop.ProductAddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuilderShop"
+        mc:Ignorable="d"
+        Title="ProductAddWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Название"/>
+            <TextBox x:Name="tbTitle"/>
+            <TextBlock Text="Высота"/>
+            <TextBox x:Name="tbHeight" Text="1"/>
+            <TextBlock Text="Ширина"/>
+            <TextBox x:Name="tbWidth" Text="1"/>
+            <TextBlock Text="Длинна"/>
+            <TextBox x:Name="tbLength" Text="1"/>
+            <TextBlock Text="Количество"/>
+            <TextBox x:Name="tbQuantity" Text="1"/>
+            <TextBlock Text="Группа"/>
+            <ComboBox x:Name="cmbGroup"/>
+            <TextBlock Text="Производитель"/>
+            <ComboBox x:Name="cmbManufacturer"/>
+            <Button Margin="0,10,0,0" Content="Добавить" x:Name="btnAdd" Click="BtnAdd_Click"/>
+            <Button Margin="0,10,0,0" Content="Назад" x:Name="btnBack" Click="BtnBack_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
